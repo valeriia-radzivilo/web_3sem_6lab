@@ -1,5 +1,6 @@
 html{
     overflow-x: hidden;
+    
 }
 body {
     background-color: #264653;
@@ -22,7 +23,8 @@ header {
 
 .main_flex{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+    padding:2%;
 
 }
 
@@ -53,17 +55,18 @@ color: #000000;
 }
 
 #menu{
-    display: grid;
+
 	background-color: #006c78;
     grid-row-start: 1;
     grid-row-end: 3;
+    grid-column: 1;
 
 }
 
 #menu ul{
     text-align: center;
     float: right;
-    margin: none;
+    padding-right: 25%;
 }
      
 #menu li{
@@ -77,18 +80,17 @@ color: #000000;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 100px;
+    line-height: 400px;
 }
      
 #menu li a{
         
-	
 	color: #FFF;
 }
 .three_fo_fi_fl{
     text-align: center;
     display: grid;
-    grid-template-columns: 220px 800px 500px;
+    grid-template-columns: 300px 605px 10px;
     
 
 }
@@ -102,6 +104,7 @@ color: #000000;
 }
 
 .three_text{
+    grid-column: 3;
 	background-color: aliceblue;
 	padding-left: 50px;
 }
@@ -131,18 +134,12 @@ color: #000000;
 	color: #810202;
 }
 
-
-.zp_image{
-    display: grid;
-        width: 100%;
-}
-
 .h2_foot{
     background-color: lightblue;
     padding: 1%;
-    grid-column: 2/4;
+    grid-column: 1/3;
     display: grid;
-    grid-template-columns: 80% 20%;
+    font-size: 200%;
 
 }
 .foot_text
@@ -151,12 +148,14 @@ color: #000000;
     margin: 1%;
     font-size: 100%;
 
+
 }
 .zip_foot{
     background-color: #FFF;
     width: 100%;
     font-size: 200%;
     text-align: right;
+
 
 }
 button{
@@ -168,4 +167,42 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 100%;
+}
+
+* { box-sizing: border-box; }
+
+/* ---- grid ---- */
+
+.grid_images {
+    grid-column: 2;
+  background: #000000;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+
+}
+
+.grid-item {
+  float: left;
+  height: 400px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.flag{
+    grid-column: 3;
 }
