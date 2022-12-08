@@ -67,7 +67,7 @@
     }
     .three_fo_fi_fl
     {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 40% 52%;
         column-gap: 17%;
     }
     
