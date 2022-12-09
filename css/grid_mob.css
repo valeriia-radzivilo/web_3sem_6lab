@@ -67,8 +67,9 @@
     }
     .three_fo_fi_fl
     {
-        grid-template-columns: 40% 52%;
+        grid-template-columns: 20% 62%;
         column-gap: 17%;
+        row-gap: 100%;
     }
     
     
@@ -84,10 +85,10 @@
            
         
     }
-    .grid-item {
+    /* .grid-item {
         float: left;
         height: 180px;
-      }
+      } */
     
  
 
