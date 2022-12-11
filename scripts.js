@@ -8,6 +8,15 @@ $(document).ready(function(){
 const element = document.getElementById("div1");
 element.appendChild(para);
   });
+
+  $("#set_amount_button").click(function(){
+
+    var searchEles = document.getElementById("div1").children;
+    
+    const max_am_bl = document.getElementById("amount_of_blocks").value;
+    console.log(searchEles);
+  });
+
 });
 
   

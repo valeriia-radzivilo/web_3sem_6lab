@@ -27,7 +27,7 @@ header {
 
 .main_flex{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 20% 57% auto;
     padding:2%;
 
 }
@@ -85,16 +85,17 @@ color: #000000;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 400px;
+  
 }
      
 #menu li a{
-        
+  font-size: large;      
 	color: #FFF;
 }
 .three_fo_fi_fl{
     text-align: center;
     display: grid;
-    grid-template-columns: 300px 605px 10px;
+
     /* row-gap: 100px; */
     
 
@@ -110,12 +111,12 @@ color: #000000;
 
 .three_text{
     grid-column: 3;
-	background-color: aliceblue;
+	background-color: rgb(195, 209, 222);
 	padding-left: 50px;
 }
 
 .five_text{
-	background-color: rgb(158, 179, 196);
+	background-color: rgb(116, 147, 173);
     
     
 }
@@ -201,7 +202,8 @@ body { font-family: sans-serif; }
 
 .grid {
   background: white;
-  max-width: fit-content*4;
+  max-width: fit-content;
+  height: fit-content;
 }
 
 /* clearfix */
@@ -215,7 +217,7 @@ body { font-family: sans-serif; }
 
 .grid-item {
   width: 45%;
-  height: 15%;
+  height: 10%;
   float: left;
   margin: 2%;
   margin-bottom: 10%;
